@@ -1,5 +1,18 @@
-import secrets
+import secrets 
 import string
+
+def banner():
+    ban = '''
+                                            __                                
+          ______ ____   ___________   _____/  |_  ___________    ______ ______
+         /  ___// __ \_/ ___\_  __ \_/ __ \   __\ \____ \__  \  /  ___//  ___/
+         \___ \\  ___/\  \___|  | \/\  ___/|  |   |  |_> > __ \_\___ \ \___ \ 
+        /____  >\___  >\___  >__|    \___  >__|   |   __(____  /____  >____  >
+             \/     \/     \/            \/       |__|       \/     \/     \/
+                                                                              by Gabxo
+    ''' 
+    print(ban)
+
 
 def generar_contrasena(longitud=12, mayusculas=True, minusculas=True, digitos=True, especiales=True):
     if longitud < 8:
@@ -82,4 +95,6 @@ def menu():
             break
 
 if __name__ == "__main__":
+    banner()  
     menu()
+    
